@@ -113,6 +113,7 @@ textarea {
     }
 }
 .checkbox {
+    position: relative;
     display: block;
     text-align: center;
     font-style: normal;
@@ -135,9 +136,50 @@ textarea {
     line-height: 24px;
     letter-spacing: 0.03em;
     color: #757575;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    position: absolute;
+
+    &:checked ~ .icon-check {
+        background-image: url(../../images/check.svg);
+        background-position: center;
+        background-size: contain;
+        border: 2px solid #2196F3;
+        outline: #2196F3;
+        background-origin: border-box;
+    }
+    &:focus:checked ~ .icon-check {
+        background-image: url(../../images/check.svg);
+        background-position: center;
+        background-size: contain;
+        border: 2px solid #2196F3;
+        outline: #2196F3;
+        background-origin: border-box;
+    }
 
 
 
+}
+.icon-check {
+    position: absolute;
+    left: 20px;
+    top: 3px;
+    display: block;
+    height: 15px;
+    width: 16px;
+    border: 2px solid $link-color;
+    border-radius: 4px;
+    box-sizing: border-box;
+
+    transition-property: background-image;
+    transition-duration: 1000ms;
+    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+
+}
+.button-modal-box {
+    display: flex;
+    align-items: center;
 }
 
 .button-modal-submit {

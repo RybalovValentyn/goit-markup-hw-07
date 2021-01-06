@@ -11,32 +11,33 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet">
     <!-- подключение стилей -->
-    <link rel="stylesheet" href="./normalize.css">
-    <link rel="stylesheet" href="./styles.css">
+      <link rel="stylesheet" href="./css/main.min.css">
    </head>
 <body class="body-port">
-    <header class="head-container" >
-        <div class="container " >
-    <a href="index.html" class="logo"><span class="logo-web">Web</span>Studio</a>  
-    <nav class="main-nav">  
-     <ul class="nav-list">
-            <li><a href="./index.html" class="navigation ">Студия</a></li>
-            <li><a href="./portfolio.html" class="navigation current" >Портфолио</a></li>
-            <li><a href="#kontact" class="navigation">Контакты</a></li> </ul>
 
-            <ul class="nav-contact">
-                <li><a href="mailto:info@devstudio.com" class="navigation-contact">
-                   <svg class="nav-mail"> <use href="./images/sprite.svg#icon-mail "></use></svg>info@devstudio.com</a></li>
-                   
-                <li><a href="tel:+380961111111" class="navigation-contact">
-                   <svg class="nav-tel"> <use href="./images/sprite.svg#icon-tel"></use></svg>+38 096 111 11 11</a></li>
-            </ul> 
-    </nav> 
-</div>          
-</header>
-    <main class="portfolio-project container">
+        <header class="head-container container" >
+            
+        <a href="index.html" class="logo"><span class="logo-web">Web</span>Studio</a>  
+        <nav class="main-nav">  
+         <ul class="nav-list">
+                <li><a href="./index.html" class="navigation ">Студия</a></li>
+                <li><a href="./portfolio.html" class="navigation current" >Портфолио</a></li>
+                <li><a href="#kontact" class="navigation last-chield">Контакты</a></li>
+         </ul>
+        
+         <ul class="nav-contact">
+             <li><a href="mailto:info@devstudio.com" class="navigation-contact">
+                <svg class="nav-mail"> <use href="./images/sprite.svg#icon-mail "></use></svg>info@devstudio.com</a></li>
+                
+             <li><a href="tel:+380961111111" class="navigation-contact last-chield">
+                <svg class="nav-tel"> <use href="./images/sprite.svg#icon-tel"></use></svg>+38 096 111 11 11</a></li>
+         </ul> 
+        </nav> 
+             
+    </header>
+    <main class="portfolio-project ">
         <!-- <h1>Проекты</h1> -->
-        <ul class="port-list">
+        <ul class="port-list container" >
             <li>
                 <button class="button-radio" type="button">Все</button>
             </li>
@@ -50,14 +51,14 @@
                 <button class="button-radio" type="button">Дизайн</button>
             </li>
             <li>
-                <button class="button-radio" type="button">Маркетинг</button>
+                <button class="button-radio last-chield" type="button">Маркетинг</button>
             </li>
         </ul>
-        <ul class="works-list ">
+        <ul class="works-list container">
             <li class="work-link">
                <a href="#" class="works"> <div class="work-img"> <img src="./images/Технокряк.jpg" alt="Технокряк" width="370" height="294">
                     <div class="overlay"> <p class="overlay-item">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
-            </div></div>
+            </div ></div>
                 <h2>Технокряк</h2>
                 <p>Веб-сайт</p></a>
                 
@@ -140,9 +141,9 @@
 
     </main>
     <footer >
-        <div class="container footer" >
-        <div class="footer-container ">
-        <a href="index.html" class="logo"><span class="logo-web">Web</span><span class="footer-container">Studio</span></a>  
+        <div class="container" >
+        <div class="footer-container">
+        <a href="index.html" class="logo"><span class="logo-web">Web</span><span class="footer">Studio</span></a>  
         <address  id="kontact" ">
             <span class="contact">г. Киев, пр-т Леси Украинки, 26 </span>
             <ul class="address">
@@ -174,7 +175,7 @@
                         </use>
                     </svg>
                 </a></li>
-                <li class="social-item "><a href="#" class="social-link social-footer">
+                <li class="social-item  "><a href="#" class="social-link social-footer last-chield">
                     <svg class="social-link-icon" width="20" height="20" >
                         <use href="./images/sprite.svg#icon-linkedin-1" >
                         </use>
@@ -184,8 +185,9 @@
         </div> 
         <form class="form-footer">
             <em class="futer-text"">Подпишитесь на рассылку</em>
-            <input class="footer-input" type="email" name="mail" value="" autocomplete="off" placeholder="E-mail"/>
-            <button class="footer-submit" type="submit">Подписаться
+            <input class="footer-input" type="email" name="mail" value="" autocomplete="off"/>
+            <label for="email" class="footer-label">E-mail</label>
+            <button class="footer-submit" type="submit">Подписаться 
                 <!-- <svg class="footer-btn-img">
                     <use href="./images/sprite-1.svg#flay"></use>
                 </svg> -->
