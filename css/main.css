@@ -719,6 +719,7 @@ footer {
 
 .social-link-footer {
   margin-left: 70px;
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 .social-footer {
@@ -735,6 +736,7 @@ footer {
   position: relative;
   display: inline-block;
   margin-left: auto;
+  background-color: #2F303A;
 }
 
 .footer-input {

@@ -47,6 +47,7 @@ footer {
 }
 .social-link-footer {
     margin-left: 70px;
+    background-color: $footer-back-color;
 }
 .social-footer {
     margin-right: 10px;
@@ -61,6 +62,7 @@ footer {
     position: relative;
     display: inline-block;
     margin-left: auto;
+    background-color: $footer-color;
 }
 .footer-input {
     display: inline-flex;
