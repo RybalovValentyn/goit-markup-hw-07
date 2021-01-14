@@ -1236,6 +1236,11 @@ textarea:focus {
   appearance: none;
 }
 
+.check:focus + .icon-check {
+  border: 2px solid #2196F3;
+  background-color: #2196F3;
+}
+
 .check:checked ~ .icon-check {
   background-image: url(./../images/check.svg);
   background-position: center;

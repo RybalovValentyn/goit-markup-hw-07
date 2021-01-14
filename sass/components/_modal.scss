@@ -170,6 +170,10 @@ textarea {
     -moz-appearance: none;
     appearance: none;
     
+    &:focus + .icon-check {
+        border: 2px solid #2196F3;
+        background-color: #2196F3;
+    }
 
     &:checked ~ .icon-check {
         background-image: url(./../images/check.svg);
