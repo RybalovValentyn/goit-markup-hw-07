@@ -99,10 +99,16 @@
 
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.modal-text-container {
+    position: relative;
+    
+    margin-right: 32px;
+
+}
 textarea {
     display: block;
     margin-bottom: 20px;
-    // width: 100%;
+    width: 100%;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     padding: 12px 16px;
@@ -112,7 +118,15 @@ textarea {
         outline: none;
     }
 }
+.check-containetr {
+    display: flex;
+    border: 1px solid red;
+    margin-left: auto;
+    margin-right: auto;
+
+}
 .checkbox {
+    padding-left: 36px;
     position: relative;
     display: block;
     text-align: center;
@@ -129,6 +143,7 @@ textarea {
     }
 }
 .check {
+    position: absolute;
     margin-right: 7px;
     font-style: normal;
     font-weight: normal;
@@ -139,7 +154,7 @@ textarea {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-    position: absolute;
+    
 
     &:checked ~ .icon-check {
         background-image: url(../../images/check.svg);
@@ -163,8 +178,8 @@ textarea {
 }
 .icon-check {
     position: absolute;
-    left: 20px;
-    top: 3px;
+    left: 12px;
+    top: 4px;
     display: block;
     height: 15px;
     width: 16px;
