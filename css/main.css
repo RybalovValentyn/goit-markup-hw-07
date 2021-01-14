@@ -1203,6 +1203,25 @@ textarea:focus {
   text-decoration: underline;
 }
 
+.icon-check {
+  position: absolute;
+  left: 12px;
+  top: 4px;
+  display: block;
+  height: 15px;
+  width: 16px;
+  border: 2px solid #212121;
+  border-radius: 4px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-transition-property: background-image;
+  transition-property: background-image;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+          transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
 .check {
   position: absolute;
   margin-right: 7px;
@@ -1218,7 +1237,7 @@ textarea:focus {
 }
 
 .check:checked ~ .icon-check {
-  background-image: url(../../images/check.svg);
+  background-image: url(./../images/check.svg);
   background-position: center;
   background-size: contain;
   border: 2px solid #2196F3;
@@ -1227,32 +1246,12 @@ textarea:focus {
 }
 
 .check:focus:checked ~ .icon-check {
-  background-image: url(../../images/check.svg);
+  background-image: url(./../images/check.svg);
   background-position: center;
   background-size: contain;
   border: 2px solid #2196F3;
   outline: #2196F3;
-  background-color: #2196F3;
   background-origin: border-box;
-}
-
-.icon-check {
-  position: absolute;
-  left: 12px;
-  top: 4px;
-  display: block;
-  height: 15px;
-  width: 16px;
-  border: 2px solid #212121;
-  border-radius: 4px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  -webkit-transition-property: background-image;
-  transition-property: background-image;
-  -webkit-transition-duration: 1000ms;
-          transition-duration: 1000ms;
-  -webkit-transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
-          transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 .button-modal-box {
